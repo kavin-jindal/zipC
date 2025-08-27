@@ -50,9 +50,6 @@ python zipc.py -w rockyou.ltxt -f main.zip -o /main/test
 
 <img width="1352" height="972" alt="image" src="https://github.com/user-attachments/assets/caae42bf-757a-426a-be2f-0db75054167c" />
 
-# Follow:
-Portfolio - https://klevr.gitbook.io/home
 
-Linkedin - https://www.linkedin.com/in/kavin-jindal/
 
 
