@@ -82,7 +82,7 @@ def main():
             print("Output in:"+(4)*' '+f"{p.output}")
 
         if not p.output:
-            print("Output in:"+(4)*' '+f"{(p.file).strip('.zip')}\\")
+            print("Output in:"+(4)*' '+f"{(p.file).strip('.zip')}")
 
         print(Fore.LIGHTBLUE_EX + "-"*y)
         global z, f, fo
@@ -99,20 +99,23 @@ try:
     filep = False
     wordp = False
     if p.help:
-        helpp =  '''
+        helpp =  f'''
 ==========================================================
-    zipC v0.1
-    By Kavin Jindal (@klevr)
-    A fast password bruteforcing tool for ZIP archives.
+            {head}
+By Kavin Jindal (@klevr)
+A fast password bruteforcing tool for ZIP archives.
 ==========================================================
 
 Usage: 
-    python zipc.py -f <zipfile> -w <wordlist> -p <output_path>
+    python zipc.py -f <zipfile> -w <wordlist> [-p <output_path>]
+
 
 Required arguments:
     -f, --file [path]       Path to the target zip file
     -w, --wordlist [path]   Path to the wordlist to be used
-Optional arguments:
+
+
+Positional arguments:
     -o, --output [path]     Directory to extract the file in
     -h, --help              Shows the help menu
 
@@ -123,7 +126,7 @@ Examples:
 
 
 '''
-        print(Fore.YELLOW + helpp)
+        print(helpp)
 
     elif not p.help:
 
